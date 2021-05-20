@@ -1,0 +1,33 @@
+.techstack_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  height: 100%;
+  padding: var(--main-padding);
+  text-align: center;
+  color: white;
+  background-color: var(--color-darkblue);
+}
+
+.techstack_logos {
+  display: flex;
+  flex-flow: wrap;
+  font-size: 4rem;
+  gap: 35px;
+  justify-content: center;
+  max-width: var(--max-width);
+}
+
+.techstack_logo-new {
+  border: 3px solid white;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

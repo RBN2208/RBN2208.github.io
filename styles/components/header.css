@@ -1,0 +1,75 @@
+@import '../_vars.css';
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vh;
+  position: relative;
+  height: 106vh;
+  color: white;
+  background-color: var(--color-darkblue);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+@media (min-width: 769px) {
+  .header {
+    justify-content: flex-start;
+    padding: 25px;
+  }
+}
+
+.header_wrapper {
+  display: grid;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.header_wrapper > h1 {
+  margin: 0;
+}
+
+.header_wrapper > span {
+  font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+  .header_wrapper {
+    margin-top: 8vw;
+  }
+}
+
+.link_list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  font-size: 7vh;
+}
+
+@media (min-width: 900px) {
+  .link_list {
+    flex-direction: row;
+  }
+}
+
+.link_list > a {
+  transform: translate(-100vw);
+  transition: all 1s;
+}
+
+.link_list > a:hover {
+  color: var(--color-teal);
+  transition: all 0.5s;
+}
+
+@media (min-width: 900px) {
+  .link_list > a {
+    transform: translateY(-100vw);
+  }
+}
+
+.slidein {
+  transform: translate(0vw) !important;
+}

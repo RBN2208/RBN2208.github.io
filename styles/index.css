@@ -1,0 +1,9 @@
+@import url('_base.css');
+@import url('./components/header.css');
+@import url('./components/navigation.css');
+@import url('./components/aboutme.css');
+@import url('./components/interests.css');
+@import url('./components/techstack.css');
+@import url('./components/projects.css');
+@import url('./components/experience.css');
+@import url('./components/footer.css');

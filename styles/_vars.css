@@ -1,0 +1,20 @@
+:root {
+  --color-darkblue: #000313;
+  --color-teal: #43b8c5;
+  --color-red: crimson;
+  --color-white: white;
+
+  --color-shadowblue: rgba(0, 3, 19, 0.5);
+  --main-padding: 80px 10%;
+  --max-width: 850px;
+}
+
+/*
+
+breakpoint-xs: 0;
+breakpoint-sm: 576px;
+breakpoint-md: 768px;
+breakpoint-lg: 992px;
+breakpoint-xl: 1200px;
+
+*/

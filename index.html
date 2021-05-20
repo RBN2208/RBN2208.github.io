@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/all.css" />
+    <script defer type="module" src="./index.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>Robin Steinhauser</title>
+  </head>
+  <body>
+    <div class="back_to_top_wrapper">
+      <a href="#home" style="display: inherit">
+        <i
+          class="fas fa-arrow-circle-up back_to_top"
+          data-id="browser_navigation-home"
+        ></i
+      ></a>
+    </div>
+    <i
+      class="fas fa-bars burgermenu_button"
+      data-id="burgermenu-open"
+      onclick="openNavigation()"
+    ></i>
+    <nav class="burgermenu_navigation" data-id="burgermenu-navigation">
+      <i
+        class="fas fa-times burgermenu_button-close"
+        data-id="burgermenu-close"
+        onclick="closeNavigation()"
+      ></i>
+      <a href="#home">HOME</a>
+      <a href="#aboutme">ABOUT ME</a>
+      <a href="#techstack">TECHSTACK</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#experience">EXPERIENCE</a>
+    </nav>
+    <header class="header" id="home">
+      <nav class="browser_navigation">
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#techstack">TECHSTACK</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#experience">EXPERIENCE</a>
+      </nav>
+      <div class="header_wrapper">
+        <span>Hi, I´m</span>
+        <h1>Robin Steinhauser</h1>
+        <span>Junior Webdeveloper</span>
+      </div>
+
+      <section class="link_list">
+        <a href="https://github.com/RBN2208"> <i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/robin-steinhauser-618b56203/">
+          <i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.xing.com/profile/Robin_Steinhauser/cv">
+          <i class="fab fa-xing"></i
+        ></a>
+        <a href="mailto:rbn.steini@gmail.com">
+          <i class="fas fa-envelope"></i
+        ></a>
+      </section>
+    </header>
+
+    <main>
+      <section class="aboutme_wrapper" id="aboutme">
+        <img
+          width="250"
+          height="296"
+          src="images/image0.jpeg"
+          alt=""
+          class="aboutme_profilepic"
+        />
+        <p>
+          Urpsprünglich aus der Druckbranche kommend, habe ich mich 2021
+          entschieden meinen alten Job an den Nagel zu hängen und in der
+          Webentwicklung durchzustarten und bin nach einigen Udemykursen zu
+          neuefische gegangen. In meinem alten Job habe ich mich über die Jahre
+          zu einem Allrounder entwickelt und selbiges ist auch mein Ziel für die
+          Webentwicklung - Fullstack-Entwickler zu werden. All das kostet
+          natürlich Zeit und es gibt viel zu lernen, da die Technologie stetig
+          weiter wächst und so werd ich auch weiter wachsen.
+        </p>
+      </section>
+
+      <section class="interests_wrapper">
+        <h3>I LOVE <span data-id="interests_text"></span></h3>
+        <div class="interests_logo_wrapper">
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fas fa-code"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„Creating something new with a bunch of lines"</span
+            >
+          </div>
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fab fa-react"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„Hated first, now it´s THE language i like the most"</span
+            >
+          </div>
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fab fa-js"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„It´s everytime a joy the see what can be done with pure
+              javascript"</span
+            >
+          </div>
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fas fa-music"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„Classic music for coding...!"</span
+            >
+          </div>
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fas fa-paw"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„Cats &amp; Dogs! The best way to get a new fokus"</span
+            >
+          </div>
+          <div class="interests_box_wrapper">
+            <div class="interests_box">
+              <i class="fas fa-tools"></i>
+            </div>
+            <span class="interests_logo_desciption"
+              >„I love getting my hands dirty on building something new"</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="techstack_wrapper" id="techstack">
+        <h3>TECHSTACK</h3>
+        <div class="techstack_logos">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node"></i>
+          <span class="techstack_logo-new">Ps</span>
+          <span class="techstack_logo-new">Ai</span>
+          <span class="techstack_logo-new">ID</span>
+          <span class="techstack_logo-new">XD</span>
+        </div>
+      </section>
+
+      <section class="projects_wrapper" id="projects">
+        <h3>PROJECTS</h3>
+        <div class="content_wrapper">
+          <div class="project_box">calcuFix</div>
+          <div class="project_box">PokeDex</div>
+        </div>
+      </section>
+
+      <section class="experience_wrapper" id="experience">
+        <h3>BACKGROUND</h3>
+        <div class="experience_flex_container">
+          <div class="experience_content_wrapper" data-id="experience_button">
+            <div class="experience_heading_container">
+              <p class="experience_heading">
+                <i class="fas fa-building"></i>neuefische
+              </p>
+              <p>2021</p>
+            </div>
+            <div class="experience_content">
+              <p>
+                Over 500 hours of hands on programming. Using the latest
+                standards in web developement to build my own progressive web
+                app.
+              </p>
+              <ul class="experience_content_list">
+                <li><i class="fas fa-arrow-right"></i>HTML5</li>
+                <li><i class="fas fa-arrow-right"></i>CSS3</li>
+                <li><i class="fas fa-arrow-right"></i>JavaScript</li>
+                <li><i class="fas fa-arrow-right"></i>React</li>
+                <li><i class="fas fa-arrow-right"></i>React Testing</li>
+                <li><i class="fas fa-arrow-right"></i>Cypress</li>
+                <li><i class="fas fa-arrow-right"></i>Styled Components</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience_content_wrapper" data-id="experience_button">
+            <div class="experience_heading_container">
+              <p class="experience_heading">
+                <i class="fas fa-building"></i>vonZ
+              </p>
+              <p>2011 - 2020</p>
+            </div>
+            <div class="experience_content">
+              <p>iqfoi qnfoq nwfuqn oifnq wifnoq fw</p>
+              <ul class="experience_content_list">
+                <li><i class="fas fa-arrow-right"></i>List 1</li>
+                <li><i class="fas fa-arrow-right"></i>List 2</li>
+                <li><i class="fas fa-arrow-right"></i>List 3</li>
+                <li><i class="fas fa-arrow-right"></i>List 4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience_content_wrapper" data-id="experience_button">
+            <div class="experience_heading_container">
+              <p class="experience_heading">
+                <i class="fas fa-building"></i>vonZ
+              </p>
+              <p>2008 - 2011</p>
+            </div>
+            <div class="experience_content">
+              <p>iqfoi qnfoq nwfuqn oifnq wifnoq fw</p>
+              <ul class="experience_content_list">
+                <li><i class="fas fa-arrow-right"></i>List 1</li>
+                <li><i class="fas fa-arrow-right"></i>List 2</li>
+                <li><i class="fas fa-arrow-right"></i>List 3</li>
+                <li><i class="fas fa-arrow-right"></i>List 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Robin Steinhauser</footer>
+  </body>
+</html>

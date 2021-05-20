@@ -1,0 +1,24 @@
+{
+  "name": "steinhauser-media",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "htmlhint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "htmlhint": "^0.14.2"
+  },
+  "dependencies": {
+    "typewriter-effect": "^2.17.0"
+  }
+}

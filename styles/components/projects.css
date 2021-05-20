@@ -1,0 +1,32 @@
+.projects_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  padding: var(--main-padding);
+}
+
+.content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  flex-flow: column;
+  max-width: var(--max-width);
+}
+
+.project_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+  background-color: var(--color-teal);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px var(--color-shadowblue);
+}
