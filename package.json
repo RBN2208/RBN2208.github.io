@@ -19,6 +19,7 @@
     "htmlhint": "^0.14.2"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "typewriter-effect": "^2.17.0"
   }
 }

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/all.css" />
-    <script defer type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script defer type="module" src="./scripts/main.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <title>Robin Steinhauser</title>
@@ -78,7 +80,7 @@
     </header>
 
     <main>
-      <section class="aboutme_wrapper" id="aboutme">
+      <section class="aboutme_wrapper" id="aboutme" data-aos="fade-up">
         <img
           width="250"
           height="296"
@@ -107,78 +109,82 @@
       </section>
 
       <section class="interests_wrapper">
-        <h3>I LOVE <span data-id="interests_text"></span></h3>
-        <div class="interests_logo_wrapper">
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fas fa-code"></i>
+        <div class="interests_wrapper-container" data-aos="fade-up">
+          <h3>I LOVE <span data-id="interests_text"></span></h3>
+          <div class="interests_logo_wrapper">
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fas fa-code"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„Creating something new with a bunch of lines"</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„Creating something new with a bunch of lines"</span
-            >
-          </div>
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fab fa-react"></i>
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fab fa-react"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„Hated first, now i love it"</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„Hated first, now i love it"</span
-            >
-          </div>
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fab fa-js"></i>
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fab fa-js"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„It is always amazing what can be achieved with pure
+                Javascript."</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„It is always amazing what can be achieved with pure
-              Javascript."</span
-            >
-          </div>
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fas fa-music"></i>
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fas fa-music"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„Have you ever listened to Ludovico Einaudi for coding? No? Try
+                it!"</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„Have you ever listened to Ludovico Einaudi for coding? No? Try
-              it!"</span
-            >
-          </div>
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fas fa-paw"></i>
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fas fa-paw"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„I love animals! Ask my 3 cats and the dog"</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„I love animals! Ask my 3 cats and the dog"</span
-            >
-          </div>
-          <div class="interests_box_wrapper">
-            <div class="interests_box">
-              <i class="fas fa-tools"></i>
+            <div class="interests_box_wrapper">
+              <div class="interests_box">
+                <i class="fas fa-tools"></i>
+              </div>
+              <span class="interests_logo_desciption"
+                >„Whether small or large things, building something yourself by
+                hand makes you proud."</span
+              >
             </div>
-            <span class="interests_logo_desciption"
-              >„Whether small or large things, building something yourself by
-              hand makes you proud."</span
-            >
           </div>
         </div>
       </section>
 
       <section class="techstack_wrapper" id="techstack">
-        <h3>TECHSTACK</h3>
-        <div class="techstack_logos">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-react"></i>
-          <i class="fab fa-node"></i>
-          <span class="techstack_logo-new">Ps</span>
-          <span class="techstack_logo-new">Ai</span>
-          <span class="techstack_logo-new">ID</span>
-          <span class="techstack_logo-new">XD</span>
+        <div data-aos="fade-up">
+          <h3>TECHSTACK</h3>
+          <div class="techstack_logos">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-node"></i>
+            <span class="techstack_logo-new">Ps</span>
+            <span class="techstack_logo-new">Ai</span>
+            <span class="techstack_logo-new">ID</span>
+            <span class="techstack_logo-new">XD</span>
+          </div>
         </div>
       </section>
 
-      <section class="projects_wrapper" id="projects">
+      <section class="projects_wrapper" id="projects" data-aos="fade-up">
         <h3>PROJECTS</h3>
         <div class="content_wrapper">
           <div class="projects_frameContainer">
@@ -308,5 +314,7 @@
     <footer class="footer">
       <i class="far fa-copyright"></i><span>Robin Steinhauser</span>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/vendor/aosInit.js"></script>
   </body>
 </html>
