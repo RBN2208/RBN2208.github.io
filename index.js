@@ -58,14 +58,20 @@ closeButton.addEventListener('click', function () {
 
 const textElement = document.querySelector('[data-id=interests_text]')
 new Typewriter(textElement, {
-  strings: [
-    'CODE',
-    'REACT',
-    'JAVASCRIPT',
-    'MUSIC FOR CODING',
-    'MY PETS',
-    'BUILDING STUFF',
-  ],
+  strings: ['CODE', 'REACT', 'JAVASCRIPT', 'MUSIC', 'MY PETS', 'DIY'],
   autoStart: true,
   loop: true,
+})
+
+///////////////////////////
+/// projects description //
+///////////////////////////
+
+const projectsButton = document.querySelector('[data-id=projects_button]')
+const projectsDescription = document.querySelector(
+  '[data-id=projects_description]'
+)
+
+projectsButton.addEventListener('click', function () {
+  projectsDescription.classList.toggle('projects_description-active')
 })
