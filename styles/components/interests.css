@@ -1,12 +1,15 @@
 .interests_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
   height: 120%;
   padding: var(--main-padding);
   color: var(--color-darkblue);
   background-color: var(--color-teal);
+}
+
+.interests_wrapper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .interests_logo_wrapper {
