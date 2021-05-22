@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
   height: 100%;
   padding: var(--main-padding);
   text-align: center;
@@ -14,7 +13,6 @@
 .experience_flex_container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   max-width: var(--max-width);
   width: 100%;
 }
@@ -26,6 +24,7 @@
   flex-direction: column;
   overflow: hidden;
   background: var(--color-darkblue);
+  margin: 10px;
 }
 
 .experience_heading_container > p,
@@ -53,7 +52,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
   color: var(--color-darkblue);
   padding: 20px 10px;
   background-color: white;
@@ -72,11 +70,18 @@
 
 .experience_content_list {
   margin: 0;
+  margin-top: 15px;
   padding-left: 20px;
 }
 
 .experience_content_list > li {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-auto-flow: column;
+  justify-content: flex-start;
   gap: 10px;
+}
+
+.experience_content_list > i {
+  margin-right: 10px;
 }

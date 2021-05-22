@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
 }
 
 .interests_logo_wrapper {
@@ -17,7 +16,6 @@
   justify-content: center;
   flex-flow: wrap;
   max-width: var(--max-width);
-  gap: 35px;
 }
 
 .interests_box {
@@ -34,6 +32,9 @@
   transition: all 0.5s;
 }
 
+.interests_box_wrapper {
+  margin: 10px;
+}
 .interests_box:hover {
   transform: rotate(360deg);
 }
@@ -47,6 +48,7 @@
     display: flex;
     font-size: 1rem;
     font-style: italic;
+    margin: 0 1rem;
   }
   .interests_logo_wrapper {
     flex-flow: column;
@@ -61,6 +63,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
   }
 }
