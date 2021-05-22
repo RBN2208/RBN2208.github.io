@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
   position: relative;
   height: 100%;
   padding: var(--main-padding);
@@ -16,15 +15,19 @@
   display: flex;
   flex-flow: wrap;
   font-size: 4rem;
-  gap: 35px;
   justify-content: center;
   max-width: var(--max-width);
+}
+
+.techstack_logos > i {
+  margin: 15px;
 }
 
 .techstack_logo-new {
   border: 3px solid white;
   width: 60px;
   height: 60px;
+  margin: 15px;
   border-radius: 10px;
   font-size: 1.5rem;
   display: flex;
